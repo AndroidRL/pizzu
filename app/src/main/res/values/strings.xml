@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ads Project</string>
+
+    <string name="no_text">No</string>
+    <string name="yes_text">Yes</string>
+
+    <string name="are_you_sure_you_want_to">Are you sure, you want to</string>
+    <string name="close_the_app">close the app?</string>
+    <string name="rate_app_text">Rate App</string>
+    <string name="exit_app_text">Exit App?</string>
+    <string name="are_you_sure_n_you_want_to_exit">Are you sure, \n you want to Exit</string>
+
+</resources>

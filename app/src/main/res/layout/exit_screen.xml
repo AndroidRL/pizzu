@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/rRoot_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="10.0">
+
+            <RelativeLayout
+                android:id="@+id/ad_native"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="5.0"
+                android:gravity="center">
+
+                <include
+                    android:id="@+id/native_ads"
+                    layout="@layout/ad_mix_native"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/exit_app_text"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:layout_weight="1.5">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/are_you_sure_you_want_to"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt1"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="5dp"
+                    android:text="@string/close_the_app"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_weight="2.0"
+                android:orientation="horizontal"
+                android:weightSum="3.0">
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/txt_rate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/exit_btn"
+                        android:backgroundTint="#03A9F4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/rate_app_text"
+                        android:textColor="@android:color/white"
+                        android:textSize="18.0sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/txt_yes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/exit_btn"
+                        android:backgroundTint="#4CAF50" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/yes_text"
+                        android:textColor="@android:color/white"
+                        android:textSize="18.0sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/txt_no"
+                        android:layout_width="fill_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/exit_btn"
+                        android:backgroundTint="#DF1616" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/no_text"
+                        android:textColor="@android:color/white"
+                        android:textSize="18.0sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
